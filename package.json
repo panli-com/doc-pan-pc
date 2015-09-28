@@ -1,0 +1,11 @@
+{
+  "name": "doc-pan-pc-book",
+  "version": "0.0.1",
+  "description": "> 这本是 PC (非移动设备) 端的 如果想查看 移动端的 请 [点击这里](http://blog.zanjs.com/ \"移动端入门\")",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

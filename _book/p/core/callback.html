@@ -1,0 +1,639 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>callback | Panli 组件使用入门</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.4.2">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../../p/core/each.html" />
+    
+    
+    <link rel="prev" href="../../p/core/html.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="3.2" data-basepath="../.." data-revision="Mon Sep 28 2015 14:24:32 GMT+0800 (中国标准时间)">
+    
+
+<div class="book-summary">
+    <div class="book-search" role="search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="panli/index.html">
+            
+                
+                    <a href="../../panli/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        组件概要
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="panli/get.html">
+            
+                
+                    <a href="../../panli/get.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        组件的获取
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="panli/preview.html">
+            
+                
+                    <a href="../../panli/preview.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        功能快速预览
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="pan/index.html">
+            
+                
+                    <a href="../../pan/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Pan方法
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="pan/pan.html">
+            
+                
+                    <a href="../../pan/pan.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Pan
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="p/core/index.html">
+            
+                
+                    <a href="../../p/core/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        P方法 - 核心
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="p/core/html.html">
+            
+                
+                    <a href="../../p/core/html.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        HTML
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.2" data-path="p/core/callback.html">
+            
+                
+                    <a href="../../p/core/callback.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        callback
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="p/core/each.html">
+            
+                
+                    <a href="../../p/core/each.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        each
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="p/core/size.html">
+            
+            <span><b>3.4.</b> size</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="p/core/length.html">
+            
+            <span><b>3.5.</b> length</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="p/core/get.html">
+            
+            <span><b>3.6.</b> get</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="p/core/index.html">
+            
+            <span><b>3.7.</b> index</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="p/core/selector.html">
+            
+            <span><b>3.8.</b> selector</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="p/core/context.html">
+            
+            <span><b>3.9.</b> context</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="p/core/data.html">
+            
+            <span><b>3.10.</b> data</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="p/core/queue.html">
+            
+            <span><b>3.11.</b> queue</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12" data-path="p/core/dequeue.html">
+            
+            <span><b>3.12.</b> dequeue</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13" data-path="p/core/clearQueue.html">
+            
+            <span><b>3.13.</b> clearQueue</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="p/characteristic/index.html">
+            
+                
+                    <a href="../../p/characteristic/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        P方法 - 属性
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="p/characteristic/attr.html">
+            
+            <span><b>4.1.</b> attr</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="p/characteristic/removeAttr.html">
+            
+            <span><b>4.2.</b> removeAttr</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="p/characteristic/prop.html">
+            
+            <span><b>4.3.</b> prop</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="p/characteristic/removeProp.html">
+            
+            <span><b>4.4.</b> removeProp</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="p/characteristic/addClass.html">
+            
+            <span><b>4.5.</b> addClass</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="p/characteristic/removeClass.html">
+            
+            <span><b>4.6.</b> removeClass</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="p/characteristic/toggleClass.html">
+            
+            <span><b>4.7.</b> toggleClass</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="p/characteristic/html.html">
+            
+            <span><b>4.8.</b> html</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="p/characteristic/text.html">
+            
+            <span><b>4.9.</b> text</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="p/characteristic/val.html">
+            
+            <span><b>4.10.</b> val</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="p/css/index.html">
+            
+                
+                    <a href="../../p/css/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        P方法 - CSS
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="p/css/css.html">
+            
+            <span><b>5.1.</b> css</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="p/css/offset.html">
+            
+            <span><b>5.2.</b> offset</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="p/css/position.html">
+            
+            <span><b>5.3.</b> position</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="p/css/scrollTop.html">
+            
+            <span><b>5.4.</b> scrollTop</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="p/css/scrollLeft.html">
+            
+            <span><b>5.5.</b> scrollLeft</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="p/css/height.html">
+            
+            <span><b>5.6.</b> height</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="p/css/width.html">
+            
+            <span><b>5.7.</b> width</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="p/css/innerHeight.html">
+            
+            <span><b>5.8.</b> innerHeight</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="p/css/innerWidth.html">
+            
+            <span><b>5.9.</b> innerWidth</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.10" data-path="p/css/outerHeight.html">
+            
+            <span><b>5.10.</b> outerHeight</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.11" data-path="p/css/outerWidth.html">
+            
+            <span><b>5.11.</b> outerWidth</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >Panli 组件使用入门</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="p-callback">P(callback)</h1>
+<h2 id="%E6%A6%82%E8%BF%B0">&#x6982;&#x8FF0;</h2>
+<p> <code>P(document).ready()</code>&#x7684;&#x7B80;&#x5199;&#x3002;
+&#x5141;&#x8BB8;&#x4F60;&#x7ED1;&#x5B9A;&#x4E00;&#x4E2A;&#x5728;DOM&#x6587;&#x6863;&#x8F7D;&#x5165;&#x5B8C;&#x6210;&#x540E;&#x6267;&#x884C;&#x7684;&#x51FD;&#x6570;&#x3002;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x7684;&#x4F5C;&#x7528;&#x5982;&#x540C;<code>P(document).ready()</code>&#x4E00;&#x6837;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;&#x7528;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x65F6;&#xFF0C;
+&#x9700;&#x8981;&#x628A;&#x9875;&#x9762;&#x4E2D;&#x6240;&#x6709;&#x9700;&#x8981;&#x5728; <code>DOM</code> &#x52A0;&#x8F7D;&#x5B8C;&#x6210;&#x65F6;&#x6267;&#x884C;&#x7684;$()&#x64CD;&#x4F5C;&#x7B26;&#x90FD;&#x5305;&#x88C5;&#x5230;&#x5176;&#x4E2D;&#x6765;&#x3002;&#x4ECE;&#x6280;&#x672F;&#x4E0A;&#x6765;&#x8BF4;&#xFF0C;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x662F;&#x53EF;&#x94FE;&#x63A5;&#x7684;&#xFF0D;&#xFF0D;&#x4F46;&#x771F;&#x6B63;&#x4EE5;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x94FE;&#x63A5;&#x7684;&#x60C5;&#x51B5;&#x5E76;&#x4E0D;&#x591A;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x4E2D;&#x4F7F;&#x7528;&#x4EFB;&#x610F;&#x591A;&#x4E2A;<code>P(document).ready</code>&#x4E8B;&#x4EF6;&#x3002;&#x53C2;&#x8003; <code>ready(Function)</code> &#x83B7;&#x53D6;&#x66F4;&#x591A; <code>ready</code> &#x4E8B;&#x4EF6;&#x7684;&#x4FE1;&#x606F;.</p>
+<h3 id="%E7%A4%BA%E4%BE%8B-1">&#x793A;&#x4F8B; 1</h3>
+<blockquote>
+<p>&#x5F53;DOM&#x52A0;&#x8F7D;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x6267;&#x884C;&#x5176;&#x4E2D;&#x7684;&#x51FD;&#x6570;&#x3002;</p>
+<pre><code>P(function(){
+  // &#x6587;&#x6863;&#x5C31;&#x7EEA;
+});
+</code></pre></blockquote>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../p/core/html.html" class="navigation navigation-prev " aria-label="Previous page: HTML"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../p/core/each.html" class="navigation navigation-next " aria-label="Next page: each"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
