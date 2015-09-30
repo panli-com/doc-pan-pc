@@ -1,6 +1,6 @@
 ## Install
 
-如果您电脑安装了 `Node` 直接找一个目录下 运行命令终端 `npm install panli`
+如果您电脑安装了 `Node` 直接在您的工作目录下 运行命令终端 `npm install panli`
 
 我们推荐您使用 `npm` 包管理器 ,毕竟他逼格很高。
 

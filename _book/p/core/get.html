@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>index | Panli 组件使用入门</title>
+        <title>get | Panli 组件使用入门</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.4.2">
@@ -29,10 +29,10 @@
         
     
     
-    <link rel="next" href="../../p/core/data.html" />
+    <link rel="next" href="../../p/core/index.html" />
     
     
-    <link rel="prev" href="../../p/core/get.html" />
+    <link rel="prev" href="../../p/core/length.html" />
     
 
         
@@ -40,7 +40,7 @@
     <body>
         
         
-    <div class="book" data-level="3.7" data-basepath="../.." data-revision="Wed Sep 30 2015 15:50:07 GMT+0800 (中国标准时间)">
+    <div class="book" data-level="3.6" data-basepath="../.." data-revision="Wed Sep 30 2015 15:50:07 GMT+0800 (中国标准时间)">
     
 
 <div class="book-summary">
@@ -249,7 +249,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.6" data-path="p/core/get.html">
+        <li class="chapter active" data-level="3.6" data-path="p/core/get.html">
             
                 
                     <a href="../../p/core/get.html">
@@ -264,7 +264,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.7" data-path="p/core/index.html">
+        <li class="chapter " data-level="3.7" data-path="p/core/index.html">
             
                 
                     <a href="../../p/core/index.html">
@@ -684,34 +684,26 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="index-selector-element">index([selector|element])</h1>
+                        <h1 id="get-index">get([index])</h1>
 <h2 id="%E6%A6%82%E8%BF%B0">&#x6982;&#x8FF0;</h2>
-<p>&#x641C;&#x7D22;&#x5339;&#x914D;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x76F8;&#x5E94;&#x5143;&#x7D20;&#x7684;&#x7D22;&#x5F15;&#x503C;&#xFF0C;&#x4ECE;0&#x5F00;&#x59CB;&#x8BA1;&#x6570;&#x3002;
-&#x5982;&#x679C;&#x4E0D;&#x7ED9; .index() &#x65B9;&#x6CD5;&#x4F20;&#x9012;&#x53C2;&#x6570;&#xFF0C;&#x90A3;&#x4E48;&#x8FD4;&#x56DE;&#x503C;&#x5C31;&#x662F;&#x8FD9;&#x4E2A;jQuery&#x5BF9;&#x8C61;&#x96C6;&#x5408;&#x4E2D;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x76F8;&#x5BF9;&#x4E8E;&#x5176;&#x540C;&#x8F88;&#x5143;&#x7D20;&#x7684;&#x4F4D;&#x7F6E;&#x3002;
-&#x5982;&#x679C;&#x53C2;&#x6570;&#x662F;&#x4E00;&#x7EC4;DOM&#x5143;&#x7D20;&#x6216;&#x8005;jQuery&#x5BF9;&#x8C61;&#xFF0C;&#x90A3;&#x4E48;&#x8FD4;&#x56DE;&#x503C;&#x5C31;&#x662F;&#x4F20;&#x9012;&#x7684;&#x5143;&#x7D20;&#x76F8;&#x5BF9;&#x4E8E;&#x539F;&#x5148;&#x96C6;&#x5408;&#x7684;&#x4F4D;&#x7F6E;&#x3002;
-&#x5982;&#x679C;&#x53C2;&#x6570;&#x662F;&#x4E00;&#x4E2A;&#x9009;&#x62E9;&#x5668;&#xFF0C;&#x90A3;&#x4E48;&#x8FD4;&#x56DE;&#x503C;&#x5C31;&#x662F;&#x539F;&#x5148;&#x5143;&#x7D20;&#x76F8;&#x5BF9;&#x4E8E;&#x9009;&#x62E9;&#x5668;&#x5339;&#x914D;&#x5143;&#x7D20;&#x4E2D;&#x7684;&#x4F4D;&#x7F6E;&#x3002;&#x5982;&#x679C;&#x627E;&#x4E0D;&#x5230;&#x5339;&#x914D;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;-1&#x3002; &#x5177;&#x4F53;&#x8BF7;&#x53C2;&#x8003;&#x793A;&#x4F8B;&#x3002;</p>
+<p>&#x53D6;&#x5F97;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x5339;&#x914D;&#x7684;&#x5143;&#x7D20;&#x3002; num&#x8868;&#x793A;&#x53D6;&#x5F97;&#x7B2C;&#x51E0;&#x4E2A;&#x5339;&#x914D;&#x7684;&#x5143;&#x7D20;&#x3002;
+&#x8FD9;&#x80FD;&#x591F;&#x8BA9;&#x4F60;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x5B9E;&#x9645;&#x7684;DOM &#x5143;&#x7D20;&#x5E76;&#x4E14;&#x5BF9;&#x4ED6;&#x76F4;&#x63A5;&#x64CD;&#x4F5C;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x901A;&#x8FC7; P &#x51FD;&#x6570;&#x3002;P(this).get(0)&#x4E0E;P(this)[0]&#x7B49;&#x4EF7;&#x3002;</p>
 <h2 id="%E5%8F%82%E6%95%B0">&#x53C2;&#x6570;</h2>
-<p>selector</p>
+<p>[index]</p>
 <blockquote>
-<p>&#x4E00;&#x4E2A;&#x9009;&#x62E9;&#x5668;&#xFF0C;&#x4EE3;&#x8868;&#x4E00;&#x4E2A; <code>P</code>&#x5BF9;&#x8C61;&#xFF0C;&#x5C06;&#x4F1A;&#x4ECE;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x4E2D;&#x67E5;&#x627E;&#x5143;&#x7D20;&#x3002;</p>
+<p>&#x53D6;&#x5F97;&#x7B2C; index &#x4E2A;&#x4F4D;&#x7F6E;&#x4E0A;&#x7684;&#x5143;&#x7D20;</p>
 </blockquote>
-<p>element</p>
+<p>get()</p>
 <blockquote>
-<p>&#x83B7;&#x5F97; <code>index</code> &#x4F4D;&#x7F6E;&#x7684;&#x5143;&#x7D20;&#x3002;&#x53EF;&#x4EE5;&#x662F; <code>DOM</code> &#x5143;&#x7D20;&#x6216; <code>P</code> &#x9009;&#x62E9;&#x5668;&#x3002;</p>
+<p>&#x53D6;&#x5F97;&#x6240;&#x6709;&#x5339;&#x914D;&#x7684; DOM &#x5143;&#x7D20;&#x96C6;&#x5408;&#x3002;</p>
 </blockquote>
-<h3 id="%E7%A4%BA%E4%BE%8B-1-%E6%9F%A5%E6%89%BE%E5%85%83%E7%B4%A0%E7%9A%84%E7%B4%A2%E5%BC%95%E5%80%BC">&#x793A;&#x4F8B; 1 &#x67E5;&#x627E;&#x5143;&#x7D20;&#x7684;&#x7D22;&#x5F15;&#x503C;</h3>
+<h2 id="%E7%A4%BA%E4%BE%8B-1">&#x793A;&#x4F8B; 1</h2>
 <p>HTML &#x4EE3;&#x7801;:</p>
-<pre><code>&lt;ul&gt;
-  &lt;li id=&quot;foo&quot;&gt;foo&lt;/li&gt;
-  &lt;li id=&quot;bar&quot;&gt;bar&lt;/li&gt;
-  &lt;li id=&quot;baz&quot;&gt;baz&lt;/li&gt;
-&lt;/ul&gt;
-</code></pre><p>P &#x4EE3;&#x7801;</p>
-<pre><code>P(&apos;li&apos;).index(document.getElementById(&apos;bar&apos;)); //1&#xFF0C;&#x4F20;&#x9012;&#x4E00;&#x4E2A;`DOM`&#x5BF9;&#x8C61;&#xFF0C;&#x8FD4;&#x56DE;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x5728;&#x539F;&#x5148;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x7D22;&#x5F15;&#x4F4D;&#x7F6E;
-P(&apos;li&apos;).index(P(&apos;#bar&apos;)); //1&#xFF0C;&#x4F20;&#x9012;&#x4E00;&#x4E2A;`P`&#x5BF9;&#x8C61;
-P(&apos;li&apos;).index(P(&apos;li:gt(0)&apos;)); //1&#xFF0C;&#x4F20;&#x9012;&#x4E00;&#x7EC4;P&#x5BF9;&#x8C61;&#xFF0C;&#x8FD4;&#x56DE;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x4E2D;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x5728;&#x539F;&#x5148;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x7D22;&#x5F15;&#x4F4D;&#x7F6E;
-P(&apos;#bar&apos;).index(&apos;li&apos;); //1&#xFF0C;&#x4F20;&#x9012;&#x4E00;&#x4E2A;&#x9009;&#x62E9;&#x5668;&#xFF0C;&#x8FD4;&#x56DE;`#bar`&#x5728;&#x6240;&#x6709;li&#x4E2D;&#x7684;&#x505A;&#x5F15;&#x4F4D;&#x7F6E;
-P(&apos;#bar&apos;).index(); //1&#xFF0C;&#x4E0D;&#x4F20;&#x9012;&#x53C2;&#x6570;&#xFF0C;&#x8FD4;&#x56DE;&#x8FD9;&#x4E2A;&#x5143;&#x7D20;&#x5728;&#x540C;&#x8F88;&#x4E2D;&#x7684;&#x7D22;&#x5F15;&#x4F4D;&#x7F6E;&#x3002;
+<pre><code>&lt;img src=&quot;p1.jpg&quot;/&gt; &lt;img src=&quot;p2.jpg&quot;/&gt;
+</code></pre><p>P &#x4EE3;&#x7801;:</p>
+<pre><code>P(&quot;img&quot;).get(0);
+</code></pre><p>&#x7ED3;&#x679C;&#x8FD4;&#x56DE;:</p>
+<pre><code>[ &lt;img src=&quot;p1.jpg&quot;/&gt; ]
 </code></pre>
                     
                     </section>
@@ -722,10 +714,10 @@ P(&apos;#bar&apos;).index(); //1&#xFF0C;&#x4E0D;&#x4F20;&#x9012;&#x53C2;&#x6570;
         </div>
 
         
-        <a href="../../p/core/get.html" class="navigation navigation-prev " aria-label="Previous page: get"><i class="fa fa-angle-left"></i></a>
+        <a href="../../p/core/length.html" class="navigation navigation-prev " aria-label="Previous page: length"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../../p/core/data.html" class="navigation navigation-next " aria-label="Next page: data"><i class="fa fa-angle-right"></i></a>
+        <a href="../../p/core/index.html" class="navigation navigation-next " aria-label="Next page: index"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

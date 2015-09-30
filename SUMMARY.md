@@ -16,6 +16,7 @@
   - [selector](p/core/selector.md)
   - [context](p/core/context.md)
   - [data](p/core/data.md)
+  - [removeData](p/core/removeData.md)
   - [queue](p/core/queue.md)
   - [dequeue](p/core/dequeue.md)
   - [clearQueue](p/core/clearQueue.md)
